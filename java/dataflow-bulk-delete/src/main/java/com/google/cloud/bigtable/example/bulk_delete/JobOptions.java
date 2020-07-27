@@ -23,7 +23,7 @@ import org.apache.beam.sdk.options.Description;
 import org.apache.beam.sdk.options.Validation.Required;
 import org.apache.beam.sdk.options.ValueProvider;
 
-interface JobOptions extends DataflowPipelineOptions {
+public interface JobOptions extends DataflowPipelineOptions {
   @Required
   @Description("The Google Cloud Bigtable instance ID .")
   String getBigtableInstanceId();
